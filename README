@@ -1,0 +1,39 @@
+This is the code which powers the monitoring gauges which display various Last.fm site statistics on my desk:
+
+http://www.flickr.com/photos/russss/2839390297/
+
+It's unlikely to be useful to anyone in its current form, but it's a decent example.
+
+*ASCII Art*
+
+    --------------
+    | Monitoring |
+    |  Server    |
+    --------------
+         |
+         | (TCP/inetd script)
+         |
+         v
+    -------------
+    |  My PC    |
+    | (gauged)  |
+    -------------
+         |
+         | (USB/Serial)
+         |
+         v
+    --------------
+    |  Arduino   |
+    --------------
+      |   |   | 
+      |   |   |  (PWM Outputs)
+      |   |   |
+     |-| |-| |-|
+     | | | | | | (Calibration
+     | | | | | |  Resistors)
+     |-| |-| |-|
+      |   |   |
+      |   |   |
+        Gauges
+
+
